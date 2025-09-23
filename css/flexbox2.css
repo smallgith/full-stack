@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+.main-container{
+    width: 1200px;
+    height: 764px;
+    
+}
+.top-div{
+   
+    display: flex;
+    gap: 30px;
+}
+.top-div div{
+    width: 400px;
+    height: 175px;
+    background-color: rgba(120, 240, 9, 0.575);
+    
+    border: 2px solid black;
+}
+.top-div .middle-div{
+    width: 900px;
+}
+
+.top-div div:first-child{
+    width: 200px;
+}
+.top-div div:last-child{
+    width: 200px;
+}
+.second-div{
+   
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.second-div div{
+    width: 400px;
+    height: 175px;
+    background-color: rgba(120, 240, 9, 0.575);
+    border: 2px solid black;
+}
+.second-div .first-div{
+    width: 1000px;
+}
+.second-div div:nth-of-type(2){
+    width: 200px;
+}
+
+.third-div{
+   
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.third-div div{
+    width: 400px;
+    height: 175px;
+    background-color: rgba(120, 240, 9, 0.575);
+    border: 2px solid black;
+}
+.third-div .last-div{
+    width: 1100px;
+}
+
+.third-div div:nth-of-type(1){
+    width: 200px;
+}
+.fourth-div{
+   
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.fourth-div div{
+    width: 400px;
+    height: 175px;
+    background-color: rgba(120, 240, 9, 0.575);
+    border: 2px solid black;
+}
+.fourth-div div:first-child{
+    width: 700px;
+}
+.fourth-div div:last-child{
+    width: 700px;
+}
+.fourth-div div:nth-of-type(3){
+    width: 600px;
+}
+
+
