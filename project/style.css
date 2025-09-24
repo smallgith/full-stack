@@ -1,0 +1,792 @@
+@font-face {
+    font-family: "monostret";
+    src: url("./Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "monostret", sans-serif;
+    color: var(--light-text-color);
+    /* border: .2rem solid black; */
+
+}
+
+:root {
+    --dark-background-color: #26335D;
+    --light-text-color: #FFFFFF;
+    --primary-color: #8D5CF6;
+    --faded-secondary-color-2: #FFF2F3;
+    --text-color: #252B42;
+    --danger-color:#E74040;
+    --second-text-color:#737373;
+    --yellow-text-color:#FFCE31;
+    --dark-bg-color:#26335D;
+    --secondary-color-1:#FF7B52;
+    --disabled-element-color:#8EC2F2;
+    --alert-color:#E77C40;
+    --main-footer-color:#FAFAFA;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--dark-background-color);
+}
+
+/* Basic style */
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+h5 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+a {
+
+    text-decoration: none;
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+button {
+
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+/* Navbar section start */
+
+.navbar {
+    width: 100%;
+    height: 5.69rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1.2rem;
+}
+
+.navbar-item {
+    width: 100%;
+    height: 2rem;
+}
+
+.navbar-list {
+    width: 45%;
+    height: 3.63rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.join_button {
+    background-color: var(--primary-color);
+    padding: 1.3rem 1.8rem;
+    border-radius: .7rem;
+    border: none;
+}
+
+.span_image {
+    margin-left: .7rem;
+}
+
+/* navbar end */
+
+
+/* Hero section start */
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.hero-content p:nth-of-type(1) {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.hero-content p:nth-of-type(2) {
+    font-size: 1.4rem;
+    font-weight: 500;
+   
+}
+
+.hero_female_img {
+    width: 45rem;
+    margin-left: 20rem;
+
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.join_buttons {
+    background-color: var(--primary-color);
+    padding: 1.3rem 2.5rem;
+    border-radius: .7rem;
+    border: none;
+}
+
+.learn_more_button {
+    border: 1px solid var(--primary-color);
+    padding: 1.3rem 2.5rem;
+    border-radius: .7rem;
+    outline: none;
+}
+
+/* Hero section end */
+
+/* Department section start */
+
+.department-section {
+    display: grid;
+    grid-template-rows: auto auto;
+    place-items: center;
+
+    gap: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+}
+
+.department-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.department-content p:nth-of-type(1) {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.department-content p:nth-of-type(2) {
+   font-size: 1.4rem;
+    font-weight: 500;
+   
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.department-image {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+
+}
+
+
+/* Department section ends */
+
+/* activity section start */
+
+.activity-section {
+    display: grid;
+    grid-template-rows: auto auto;
+    place-items: center;
+
+    gap: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 15rem;
+
+}
+
+.activity-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.activity-content p:nth-of-type(1) {
+    font-size: 3rem;
+    font-weight: 700;
+   
+}
+
+.activity-content p:nth-of-type(2) {
+    font-size: 1.4rem;
+    font-weight: 500;
+   
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.activity-cards {
+   
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.activity_logo {
+    background-color: var(--faded-secondary-color-2);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.activity_heart_logo {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 3.5rem;
+}
+
+.heart-card-details {
+    display: grid;
+    place-items: center;
+     background-color: var(--light-text-color);
+    padding: 5rem 7rem;
+     box-shadow: 0px 13px 19px 0px #00000012;
+}
+.activity_border{
+   
+    width: 10rem;
+    
+    border-top: .3rem solid var(--danger-color);
+    
+
+}
+.activity-sub-content{
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+justify-content: center;
+align-items: center;
+
+}
+.activity-sub-content p{
+    
+   padding-top: 2.5rem;
+}
+.para-header{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+   
+}
+.para-main{
+    width: 20rem;
+    font-size: 1.8rem;
+    color:var(--second-text-color) ;
+    text-align: center;
+    
+    
+}
+
+/* activity section end */
+
+/*  our doctor section start */
+.doctor_specilize{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.doctor-section{
+
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+  
+}
+.special_border{
+    width: 10rem;
+    
+        border-top: .5rem solid var(--danger-color);
+}
+.doctor-buttons{
+    display: flex;
+    align-items:center ;
+    gap: 1.6rem;
+}
+.learn_more_doctor{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}.doctor-para{
+    width: 33rem;
+}
+.doctor_female_img{
+    width: 45rem;
+}
+
+
+/*  our doctor section end */
+
+
+/* service section start */
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.ambulance_service_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.doctor_list{
+    list-style-type: none;
+    background-color: var(--light-text-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+        align-items: center;
+}
+
+.doctor_list i{
+    color: var(--text-color);
+    font-size: 2.5rem;
+
+}
+.service_icons{
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+    top: 78%;
+    
+    left: 24%;
+
+   
+   
+}
+.ambulance_image{
+    position: relative;
+    z-index: 0;
+    width: 40rem;
+    height: 34rem;
+}
+.amb_img{
+    width: 100%;
+   
+}
+.service_button button{
+    width: 8rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--danger-color);
+    font-size: 1.5rem;
+    letter-spacing: .10rem;
+    position: absolute;
+    top:7%;
+    left: 5%;
+    border: none;
+    
+}
+
+.ambulance_content {
+    
+    background-color: var(--light-text-color);
+    color: var(--text-color);
+    width: 40rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.ambulance_main_para{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.painless_para{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.rate{
+    background-color: var(--dark-bg-color);
+    width: 7rem;
+    border-radius: 5rem;
+    color: var(--light-text-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+   
+}
+.rate i{
+    color: var(--yellow-text-color);
+    padding-right: 1.85rem;
+    
+}
+.rate_content{
+    display: flex;
+    gap: 1rem;
+}
+.painless_header_para{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.painless_main_para{
+    font-size: 1.5rem;
+    color:var(--second-text-color);
+    font-weight: 500;
+
+}
+.download_sale span{
+    color: var(--second-text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+   
+}
+.download_sale span img{
+    padding-right: 1.5rem;
+}
+.service_spans span:first-child{
+    color: var(--second-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.service_spans span:last-child {
+    color: var(--secondary-color-1);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+.lear_more_service{
+        border: 1px solid var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: .7rem;
+            outline: none;
+            color: var(--primary-color);
+            width: 17rem;
+            border-radius: 5rem;
+            text-align: center;
+}
+.lear_more_service img{
+    padding-left: 1rem;
+   
+}
+
+/* service section end */
+
+/* pricing section start */
+
+.pricing_section{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: grid;
+    place-items: center;
+    
+}
+.pricing_cards{
+        display: grid;
+        grid-template-columns: repeat(3,40rem);
+        gap: 4rem;
+       
+        margin-top: 10rem;
+        
+}
+.pricing_first_cards{
+    background-color: var(--light-text-color);
+        padding: 5rem;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        gap: 5rem;
+        position: relative;
+
+
+}
+.circle_pricing{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+}
+.circle_pricing img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pricing_list{
+    display: flex;
+    flex-direction: column;
+  
+}
+.pricing_header{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.pricing_header_para{
+    color: var(--second-text-color);
+}
+.pricing_main_header{
+    font-size: 1.5rem;
+        color: var(--second-text-color);
+        font-weight: 700;
+}
+.pricing_span{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.dollar_header{
+    color: var(--primary-color);
+    font-size: 3.87rem;
+    font-weight: 700;
+
+}
+.pricing_span h6{
+    color: var(--disabled-element-color);
+    font-size: 1.5rem;
+}
+.pricing_main_para{
+    font-size: 1.5rem;
+    width: 18rem;
+    color: var(--second-text-color);
+    font-weight: 500;
+}
+.free_button{
+        background-color: var(--primary-color);
+            padding: 1.3rem 2.5rem;
+            border-radius: .7rem;
+            border: none;
+}
+.pricing_list li {
+    font-size: 1.5rem;
+    color: var(--text-color);
+
+    position: relative;
+    padding-left: 3rem;
+ 
+}
+
+.pricing_list li::before {
+    content: "";
+    background-image: url('/image/green_circle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pricing_free_circle{
+    width: 10rem;
+        height: 10rem;
+        background-color: var(--alert-color);
+        border-radius: 50%;
+        position: absolute;
+        top: -4rem;
+        right: -3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.pricing_free_circle h1{
+    font-size: 1.6rem;
+        color: #fff;
+        margin: 0;
+}
+/* pricing section end */
+
+/* client section start  */
+.client_section
+{
+        margin-top: 10rem;
+            margin-bottom: 10rem;
+            display: grid;
+            place-items: center;
+}
+.client_first_card{
+    background-color: var(--light-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 8rem;
+    gap: 1.8rem;
+
+}
+.client_cards{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.female_client_img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.client_header_para
+{
+    font-size: 1.6rem;
+        color: var(--text-color);
+        font-weight: 700;
+}
+.client_main_para{
+    font-size: 1.4rem;
+        color: var(--second-text-color);
+        font-weight: 600;
+}
+
+/*  client section end */
+
+/* contact section start */
+.contact_section{
+    margin-bottom: 10rem;
+}
+.contact_button{
+    position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 0 1.5rem;
+  border-radius: 0 .5rem .5rem 0;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.contact_input{
+position: relative;
+    width: 50rem;
+    
+    /* adjust width */
+    margin: 5rem auto;
+
+}
+.contact_input input{
+    width: 100%;
+        padding: 1rem 8rem 1rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+}
+.contact_input input::placeholder{
+    padding-left: 1rem;
+}
+/* contact section end */
+
+/* footer section start */
+.footer_main_section{
+   padding: 0rem 15rem;
+   background-color: var(--light-text-color);
+  
+}
+.footer_section{
+   display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer_section ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+    
+}
+.footer_section ul li{
+    color: var(--second-text-color);
+}
+.main_footer_list{
+    font-size: 1.8rem;
+    color: var(--text-color) !important;
+    
+}
+.icon_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon_list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon_list li span {
+    display: inline-flex;
+    margin-right: 8px;
+}
+
+.icon_list li img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon_list li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.footer_copy{
+    display: flex;
+    background-color: var(--main-footer-color);
+    justify-content: space-between;
+    padding: 1.5rem 15rem;
+}
+.footer_main_para{
+        font-size: 1.5rem;
+            color: var(--second-text-color);
+            font-weight: 500;
+            font-weight: 700;
+}
+
+/* footer section end */
