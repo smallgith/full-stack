@@ -38,9 +38,6 @@ body {
 }
 
 /* Basic style */
-.fa-solid{
-    font-size: 2rem;
-}
 h3 {
     font-weight: 700;
     font-size: 2rem;
@@ -793,62 +790,3 @@ position: relative;
 }
 
 /* footer section end */
-
-
-/* media query */
-
-
-/* @media (max-width: 480px) {
-    html {
-            font-size: 50%;
-        }
-        .togle_button {
-            display: block;
-        }
-               
-
-      
-}
-
-@media (max-width: 576px) {
-    
-}
-
-
-@media (max-width: 768px) {
-    .navbar{
-        justify-content: space-between;
-        align-items: center;
-        padding:0rem 2rem ;
-    }
-    .navbar-list{
-        display: none;
-    }
-    .hero_female_img {
-            width: 45rem;
-            margin-left: 0rem;
-    }
-        
-    
-  
-        
-   
-        
-        
-    
-   
-}
-
-
-@media (max-width: 992px) {
-    
-}
-
-@media (max-width: 1200px) {
-    
-}
-
-
-@media (max-width: 1400px) {
-   
-} */
