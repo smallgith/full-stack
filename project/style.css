@@ -383,14 +383,17 @@ align-items: center;
 /* service section start */
 .service-cards{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,auto);
     gap: 2rem;
+    place-items: center;
 }
 .ambulance_service_card{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+   
     
 }
 
@@ -426,8 +429,9 @@ align-items: center;
 .ambulance_image{
     position: relative;
     z-index: 0;
-    width: 40rem;
+    width: 100%;
     height: 34rem;
+    
 }
 .amb_img{
     width: 100%;
