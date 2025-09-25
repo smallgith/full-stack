@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-family: "monostret", sans-serif;
     color: var(--light-text-color);
-    border: .2rem solid black;
+    /* border: .2rem solid black; */
 
 }
 
@@ -607,7 +607,7 @@ align-items: center;
 
 .pricing_list li::before {
     content: "";
-    background-image: url('/image/green_circle.svg');
+    background-image: url('./image/green_circle.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 2rem;
