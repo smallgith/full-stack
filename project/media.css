@@ -1,0 +1,91 @@
+@media only screen and (max-width: 576px) {
+   .hero-content{
+    text-align: center;
+   }
+   .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+  .hero_female_img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+  }
+  .depart-img{
+    width: 100%;
+    padding: 0 2rem;
+  }
+.activity-cards {
+   
+   
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+
+
+}
+.doctor-section{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+    text-align: center;
+  
+}
+.special_border{
+    display: none;
+}
+.doctor_female_img{
+    width: 100%;
+}
+.service-cards{
+    
+    display: grid;
+    grid-template-columns: repeat(1,150px);
+    gap: 2rem;
+    padding: 0 3rem;
+}
+.amb_img{
+    width: 100%;
+}
+.ambulance_service_card{
+    width: 100%;
+}
+.heart-card-details{
+    padding: 4rem 3.5rem;
+}
+
+
+
+
+ 
+
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-list {
+    display: none;
+  }
+  .navbar {
+    justify-content: start;
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 1201px) {
+}
