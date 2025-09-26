@@ -384,10 +384,28 @@ align-items: center;
 /*  our doctor section end */
 
 
+<<<<<<< HEAD
 .service-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+=======
+/* service section start */
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 2rem;
+    place-items: center;
+}
+.ambulance_service_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+    
+>>>>>>> 189e9011eb2007f146f41ef7bc81e1897967377b
 }
 
 .ambulance_service_card {
@@ -423,6 +441,7 @@ align-items: center;
   left: 50%;
   transform: translateX(-50%);
 }
+<<<<<<< HEAD
 
 .ambulance_image {
   position: relative;
@@ -430,6 +449,14 @@ align-items: center;
   width: 100%;
   max-width: 40rem;
   height: auto;
+=======
+.ambulance_image{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 34rem;
+    
+>>>>>>> 189e9011eb2007f146f41ef7bc81e1897967377b
 }
 
 .amb_img {
