@@ -1,0 +1,546 @@
+@media only screen and (max-width:320px){
+      .heart-card-details {
+        padding: 4rem 3.5rem;
+    }
+    *{
+    overflow-x: hidden;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .navbar {
+    justify-content: start;
+    padding: 0 4rem;
+  }
+   .hero-content{
+    text-align: center;
+   }
+   .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+  .hero_female_img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+  }
+  .depart-img{
+    width: 100%;
+    padding: 0 2rem;
+  }
+.activity-cards {
+   
+   
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+
+
+}
+.doctor-section{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+    text-align: center;
+  
+}
+.special_border{
+    display: none;
+}
+.doctor_female_img{
+    width: 100%;
+    padding: 0 2rem;
+    
+}
+.service-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .ambulance_image {
+    max-width: 100%;
+  }
+
+  .ambulance_content {
+    padding: 1.5rem;
+  }
+
+  .painless_para {
+    font-size: 1.4rem;
+  }
+
+  .painless_main_para {
+    font-size: 1.1rem;
+  }
+
+  .doctor_list {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .doctor_list i {
+    font-size: 1.8rem;
+  }
+
+  .service_button button {
+    width: 6rem;
+    font-size: 1.2rem;
+  }
+  
+  
+  .hero-content p:nth-of-type(2){
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .doctor-buttons{
+  display: flex;
+  justify-content: center;
+}
+.pricing_cards{
+   grid-template-columns: repeat(1,auto);
+   padding: 0 1.5rem;
+}
+.pricing_free_circle {
+  display: none;
+}
+.activity-content p:nth-of-type(2){
+  padding: 0 1rem;
+}
+.client_cards{
+  margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+    
+  }
+  .client_first_card {
+    padding: 2rem 4rem;
+  }
+ .contact_input{
+
+width: 95%;
+margin:auto;
+margin-top: 2rem;
+
+
+}
+
+.footer_section{
+  width: 100%;
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  
+  flex-direction: column;
+  
+}
+.footer_main_section{
+  
+  width: 100%;
+  padding: 0rem;
+  margin: 0;
+  background-color: var(--light-text-color);
+  
+}
+.icon_list li{
+ padding: 0 5rem;
+ margin: 0 auto;
+ text-align: center;
+}
+.footer_copy{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  background-color: var(--main-footer-color);
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 5rem;
+  text-align: center;
+}
+.social_icons{
+  margin: 0 auto;
+}
+.ambulance_content {
+  
+    background-color: var(--light-text-color);
+    color: var(--text-color);
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0rem;
+    
+  }
+  .footer_social_icons{
+    display: flex;
+    justify-content: center;
+  }
+  
+ 
+}
+@media (min-width:320px) and (max-width: 576px) {
+ 
+  *{
+    overflow-x: hidden;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .navbar {
+    justify-content: start;
+    padding: 0 4rem;
+  }
+   .hero-content{
+    text-align: center;
+   }
+   .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+  .hero_female_img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+  }
+  .depart-img{
+    width: 100%;
+    padding: 0 2rem;
+  }
+.activity-cards {
+   
+   
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+
+
+}
+.doctor-section{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 5rem;
+    text-align: center;
+  
+}
+.special_border{
+    display: none;
+}
+.doctor_female_img{
+    width: 100%;
+    padding: 0 2rem;
+    
+}
+.service-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .ambulance_image {
+    max-width: 100%;
+  }
+
+  .ambulance_content {
+    padding: 1.5rem;
+  }
+
+  .painless_para {
+    font-size: 1.4rem;
+  }
+
+  .painless_main_para {
+    font-size: 1.1rem;
+  }
+
+  .doctor_list {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .doctor_list i {
+    font-size: 1.8rem;
+  }
+
+  .service_button button {
+    width: 6rem;
+    font-size: 1.2rem;
+  }
+  
+  
+  .hero-content p:nth-of-type(2){
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .doctor-buttons{
+  display: flex;
+  justify-content: center;
+}
+.pricing_cards{
+   grid-template-columns: repeat(1,auto);
+   padding: 0 1.5rem;
+}
+.pricing_free_circle {
+  display: none;
+}
+.activity-content p:nth-of-type(2){
+  padding: 0 1rem;
+}
+.client_cards{
+  margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+    
+  }
+  .client_first_card {
+    padding: 2rem 4rem;
+  }
+ .contact_input{
+
+width: 95%;
+margin:auto;
+margin-top: 2rem;
+
+
+}
+
+.footer_section{
+  width: 100%;
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  
+  flex-direction: column;
+  
+}
+.footer_main_section{
+  
+  width: 100%;
+  padding: 0rem;
+  margin: 0;
+  background-color: var(--light-text-color);
+  
+}
+.icon_list li{
+ padding: 0 5rem;
+ margin: 0 auto;
+ text-align: center;
+}
+.footer_copy{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  background-color: var(--main-footer-color);
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 5rem;
+  text-align: center;
+}
+.social_icons{
+  margin: 0 auto;
+}
+.ambulance_content {
+  
+    background-color: var(--light-text-color);
+    color: var(--text-color);
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0rem;
+    
+  }
+  .footer_social_icons{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+
+}
+
+@media (min-width:577px) and (max-width: 768px)  {
+
+   .navbar-list {
+    /* width: 0%; */
+    height: 3.63rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    /* margin: 2.5rem; */
+    gap: 2rem;
+}
+  .hero_female_img {
+    width: 35rem;
+    margin-left: 0rem;
+  
+}
+    .doctor_female_img {
+        width: 100%;
+        
+    }
+
+.doctor-section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 3rem;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.pricing_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 34rem);
+    gap: 1rem;
+    margin-top: 10rem;
+}
+.doctor_female_img{
+    width: 100%;
+    padding: 0 2rem;
+    
+}
+.pricing_free_circle {
+    overflow: hidden;
+}
+.footer_main_section {
+    padding: 0rem 2rem;
+    background-color: var(--light-text-color);
+}
+.footer_section{
+  width: 100%;
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+}
+
+
+
+}
+
+@media (min-width:769px) and (max-width: 992px) {
+  
+   .navbar-list {
+    /* width: 0%; */
+    height: 3.63rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    /* margin: 2.5rem; */
+    gap: 2rem;
+}
+  .hero_female_img {
+    width: 35rem;
+    margin-left: 0rem;
+  
+}
+    .doctor_female_img {
+        width: 100%;
+        
+    }
+
+.doctor-section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    margin: 2.5rem;
+    gap: 3rem;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.pricing_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 34rem);
+    gap: 1rem;
+    margin-top: 10rem;
+}
+.doctor_female_img{
+    width: 100%;
+    padding: 0 2rem;
+    
+}
+.pricing_free_circle {
+    overflow: hidden;
+}
+.footer_main_section {
+    padding: 0rem 2rem;
+    background-color: var(--light-text-color);
+}
+.footer_section{
+  width: 100%;
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+}
+      .doctor_female_img {
+        width: 35rem;
+        margin-left: 0rem;
+    }
+}
+
+@media (min-width:px) and(max-width: 1200px) {
+  .navbar-list {
+    /* width: 45%; */
+    height: 3.63rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+   
+}
+.pricing_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 32rem);
+    gap: 1rem;
+    margin-top: 10rem;
+}
+  
+}
+
+@media only screen and (min-width: 1201px) {
+}
