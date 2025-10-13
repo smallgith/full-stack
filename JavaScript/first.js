@@ -134,3 +134,66 @@ patternDisplay.innerHTML = output;
     ++b  // ? pre increment
     console.log(b) 
 }
+{
+    let text="";
+let i = 1;
+
+while (i < 10) {
+  text += i;
+  i++;
+}
+console.log(text)
+}
+
+{
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  console.log(cars[i])
+}
+
+}
+{
+    let text = "Hello world"
+    console.log(text.charAt(2))  // It is used for extract character from string
+
+    let text2 = "Hello world"
+    console.log(text.at(2)) // Both are same
+    
+}
+{
+    let text = "Hello"
+    let text1 = "World"
+    console.log(text.concat(" ",text1))
+}
+{
+    let text = "Hello";
+const myArr = text.split("");
+
+text = "";
+for (let i = 0; i < myArr.length; i++) {
+ console.log(myArr[i])
+}
+}
+{
+    let string = "hello world is the best for everyone"
+    let arr = string.split(" ")
+    for(i=0;i<arr.length; i++){
+        console.log(arr[i])
+    }
+}
+{
+    let a = 10/0
+    console.log(a)
+}
+{
+    function fun(name,age){
+        console.log(name,age)
+    }
+    fun("Shubham",22)
+}
+{
+    const d = new Date(2004)
+    console.log(d)
+}
