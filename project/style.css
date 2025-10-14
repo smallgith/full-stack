@@ -233,6 +233,9 @@ button {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
 
 }
+.depart-img{
+  width: 100%;
+}
 
 
 /* Department section ends */
@@ -280,6 +283,7 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  
 
 }
 
