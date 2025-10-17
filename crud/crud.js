@@ -8,14 +8,9 @@ let tableData = document.querySelector("#tableData");
 let requireSpan1 = document.querySelector(".requireSpan1");
 let requireSpan2 = document.querySelector(".requireSpan2");
 let requireSpan3 = document.querySelector(".requireSpan3");
-
-
-
 let arr = [];
 let editId = null;
 let sortAscending = true; 
-
-
 function formatDateTime(dateStr) {
   let dateObj = new Date(dateStr);
   let day = String(dateObj.getDate()).padStart(2, "0");
@@ -25,7 +20,6 @@ function formatDateTime(dateStr) {
   let minutes = String(dateObj.getMinutes()).padStart(2, "0");
   return `${day}-${month}-${year}, ${hours}:${minutes}`;
 }
-
 function renderUser(userTask) {
   tableData.innerHTML = `
         <tr>
@@ -35,8 +29,6 @@ function renderUser(userTask) {
             <th>Actions</th>
         </tr>
     `;
-
-
   userTask.sort((a, b) => {
     return sortAscending
       ? new Date(a.deadline) - new Date(b.deadline)
@@ -56,7 +48,6 @@ function renderUser(userTask) {
             <td>${formattedDeadline}</td>
             <td></td>
         `;
-
     let editBtn = document.createElement("button");
     editBtn.className = "editButton";
     editBtn.innerText = "Edit";
@@ -71,7 +62,6 @@ function renderUser(userTask) {
     tableData.appendChild(newRow);
   });
 }
-
 function formSubmitBtn(e) {
   e.preventDefault();
 
@@ -95,7 +85,6 @@ function formSubmitBtn(e) {
   }
 
   if (!isValid) return;
-
   if (editId) {
     arr = arr.map((task) => {
       if (task.id === editId) {
@@ -119,11 +108,9 @@ function formSubmitBtn(e) {
     };
     arr.push(obj);
   }
-
   userTaskSubmit.reset();
   renderUser(arr);
 }
-
 function editTask(id) {
   let taskToEdit = arr.find((task) => task.id === id);
   enterTask.value = taskToEdit.task;
@@ -132,12 +119,10 @@ function editTask(id) {
   editId = id;
   addTaskData.innerText = "Update Task";
 }
-
 function deleteTask(id) {
   arr = arr.filter((task) => task.id !== id);
   renderUser(arr);
 }
-
 searchData.addEventListener("input", (e) => {
   let filter = e.target.value.toLowerCase();
   let filteredArr = arr.filter((task) =>
@@ -145,9 +130,5 @@ searchData.addEventListener("input", (e) => {
   );
   renderUser(filteredArr);
 });
-
 addTaskData.addEventListener("click", formSubmitBtn);
-
-
-
 renderUser(arr);
