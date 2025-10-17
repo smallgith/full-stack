@@ -1,4 +1,4 @@
-{
+
 
     let btnClick = document.querySelector('#btnClick')
     
@@ -6,9 +6,7 @@
         
         alert("Hello world for external js")
     })
-}
 
-{
     let lumpImg = document.getElementById('lump_img')
     let onLump = document.getElementById('onLump')
     let offLump = document.getElementById('offLump')
@@ -21,8 +19,8 @@
         
     })
 
-}
-{
+
+
 
     // ? There are two type of value : 
     //  ? 1.Variable
@@ -67,7 +65,6 @@
     // console.log("5"+"2"-3)
     // console.log(5+3-"2")
 
-}
 
 /*
 Hosting => means declare like var or function befotr initilization
@@ -78,10 +75,9 @@ a = 10
 hello()
 function hello(){
     var a;
-    console.log(a)
+    console.log("answer is a = ",a)
     a = 10
 }
-{
 
     const person = {
         name: "Rahul",
@@ -94,12 +90,12 @@ function hello(){
     // greetFn(); 
     const greetFnBound = person.greet.bind(person);
     greetFnBound();
-}
+
 
 const a = 10
 
 
-{
+
     let pattern = document.querySelector('#pattern')
     let patternDisplay = document.querySelector('.patternDisplay')
     
@@ -122,19 +118,19 @@ const a = 10
 patternDisplay.innerHTML = output;
 
 });
-}
 
-{
+
+
     // console.log("Hello-5")
-    let a = 1
-    a++  // ? post increment
-    console.log(a)
+    var ab = 1
+    ab++  // ? post increment
+    console.log(ab)
     
     let b = 1
     ++b  // ? pre increment
     console.log(b) 
-}
-{
+
+
     let text="";
 let i = 1;
 
@@ -143,57 +139,53 @@ while (i < 10) {
   i++;
 }
 console.log(text)
-}
 
-{
+
+
     const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 
-let text = "";
+let text1 = "";
 for (let i = 0; i < cars.length; i++) {
   console.log(cars[i])
 }
 
-}
-{
-    let text = "Hello world"
+
+
+    let text0 = "Hello world"
     console.log(text.charAt(2))  // It is used for extract character from string
 
     let text2 = "Hello world"
     console.log(text.at(2)) // Both are same
     
-}
-{
-    let text = "Hello"
-    let text1 = "World"
+
+    let text01 = "Hello"
+    let text11 = "World"
     console.log(text.concat(" ",text1))
-}
-{
-    let text = "Hello";
+
+
+    let text123 = "Hello";
 const myArr = text.split("");
 
 text = "";
 for (let i = 0; i < myArr.length; i++) {
  console.log(myArr[i])
-}
-}
-{
+
     let string = "hello world is the best for everyone"
     let arr = string.split(" ")
     for(i=0;i<arr.length; i++){
         console.log(arr[i])
     }
 }
-{
-    let a = 10/0
+
+    let aa = 10/0
     console.log(a)
-}
-{
+
+
     function fun(name,age){
         console.log(name,age)
     }
     fun("Shubham",22)
-}
-{
+
+
     const d = new Date(2004)
     console.log(d)
-}
