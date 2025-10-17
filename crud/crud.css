@@ -1,120 +1,126 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;   
 }
-body::selection{
+
+body::selection {
     background-color: green;
     color: white;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5rem;
 }
-#userTaskSubmit{
+
+#userTaskSubmit {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: .9rem;
+    gap: 0.9rem;
 }
-#userTaskSubmit > div{
+
+#userTaskSubmit > div {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: .2rem;
+    gap: 0.2rem;
 }
-input{
+
+input {
     width: 25rem;
     height: 2.5rem;
-    padding: .6rem;
-    border-radius: .3rem;
-    border: .15rem solid green;
-    font-size: .99rem;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    border: 0.15rem solid green;
+    font-size: 0.99rem;
     font-weight: 500;   
 }
-input::placeholder{
+
+input::placeholder {
     color: black;
 }
-button{
+
+button {
     width: 10rem;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
     background-color: green;
     color: white;
     border: none;
+    cursor: pointer;
 }
-p{
-    
+
+p {
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 700;
     color: green;
 }
-#userDropDown{
-       width: 25rem;
+
+#userDropDown {
+    width: 25rem;
     height: 2.5rem;
-    padding: .5rem .6rem;
-    border-radius: .3rem;
-    border: .15rem solid green;
-    font-size: .99rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.3rem;
+    border: 0.15rem solid green;
+    font-size: 0.99rem;
     font-weight: 500;
 }
-span{
-    color: rgba(255, 0, 0,.8);
+
+span {
+    color: rgba(255, 0, 0, 0.8);
     display: none;
-    
 }
-.taskTable{
-    margin: 3rem 0rem;
+
+.taskTable {
+    margin: 3rem 0;
 }
-#tableData{
-    border: .15rem solid green;
+
+#tableData {
+    width: 50rem;
     border-collapse: collapse;
-    border: .15rem solid white;
-   
+    border: 0.15rem solid green;
 }
-th{
-    border: .15rem solid white;
+
+th {
+    border: 0.15rem solid white;
     color: white;
     background-color: green;
-    padding: .7rem 2rem;
-}
-td{
-     padding: .7rem 2rem; 
+    padding: 0.7rem 2rem;
 }
 
-.editButton{
-    width: 5rem;
-    background-color: rgba(0, 128, 0,.85);
-    padding: .8rem;
-    margin: .5rem;
+td {
+    padding: 0.7rem 2rem;
 }
-.deleteButton{
+
+.editButton, .deleteButton {
     width: 5rem;
-    background-color: rgba(0, 128, 0,.85);
-    padding: .8rem;
+    background-color: rgba(0, 128, 0, 0.85);
+    padding: 0.8rem;
+    margin: 0.5rem 0.5rem 0.5rem 0; /* deleteButton will override margin if needed */
+    cursor: pointer;
 }
-.searchElem{
-       display: flex;
-    justify-content: center;
+
+.searchElem {
+    display: flex;
     flex-direction: column;
-    gap: .2rem;
-    margin: 1rem 0rem;
+    gap: 0.2rem;
+    margin: 1rem 0;
 }
-.formData{
-    width: 50rem;
-}
-.taskTable .tableData{
+
+.formData {
     width: 50rem;
 }
 
-
+.taskTable .tableData {
+    width: 50rem;
+}
