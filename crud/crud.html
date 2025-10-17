@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+
+    <!-- style file -->
+    <link rel="stylesheet" href="./crud.css">
+
+    <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <main>
+        <div class="curdselection">
+            <p>Add Task</p>
+            <!-- <input type="text" name="searchData" id="searchData"> -->
+            <div class="formData">
+
+                <form action="" id="userTaskSubmit">
+                    <div class="userInformation">
+
+                        <label for="userTask">Task</label>
+                        <input type="text" name="enterTask" id="enterTask" placeholder="Enter your task">
+                        <span>require</span>
+                    </div>
+                        
+                    <div class="userInformation">
+
+                        <label for="userStatus">Status</label>
+                        <select name="userDropDown" id="userDropDown">
+                            <option value="" name="">Select status</option>
+                            <option value="ongoing" name="ongoing">Ongoing</option>
+                            <option value="padding" name="padding">Padding</option>
+                            <option value="completed" name="completed">Completed</option>
+                        </select>
+                        <span>require</span>
+                    </div>
+                    <div class="userInformation">
+
+                        <label for="userTime">Deadline</label>
+                        <input type="datetime-local" name="userTime" id="userTime">
+                        <span>require</span>
+                    </div>
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+            <div class="taskTable">
+                <table border="1" id="tableData">
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                        <th>Deadline</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr class="dataInsert">
+                        <td>Complete assignment</td>
+                        <td>Completed</td>
+                        <td>10/11/2023, 12:00:00PM</td>
+                        <td>
+                            <button id="editButton">Edit</button>
+                            <button id="deleteButton">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </main>
+    
+
+
+
+
+    <script src="./crud.js"></script>
+</body>
+</html>
