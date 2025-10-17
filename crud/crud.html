@@ -19,9 +19,8 @@
     <main>
         <div class="curdselection">
             <p>Add Task</p>
-            <!-- <input type="text" name="searchData" id="searchData"> -->
             <div class="formData">
-
+                
                 <form action="" id="userTaskSubmit">
                     <div class="userInformation">
 
@@ -29,9 +28,9 @@
                         <input type="text" name="enterTask" id="enterTask" placeholder="Enter your task">
                         <span>require</span>
                     </div>
-                        
+                    
                     <div class="userInformation">
-
+                        
                         <label for="userStatus">Status</label>
                         <select name="userDropDown" id="userDropDown">
                             <option value="" name="">Select status</option>
@@ -42,7 +41,7 @@
                         <span>require</span>
                     </div>
                     <div class="userInformation">
-
+                        
                         <label for="userTime">Deadline</label>
                         <input type="datetime-local" name="userTime" id="userTime">
                         <span>require</span>
@@ -51,12 +50,27 @@
                 </form>
             </div>
             <div class="taskTable">
+                <p>Todo List</p>
+                <div class="searchElem">
+
+                    <label for="searchData">Search</label>
+                    <input type="text" name="searchData" id="searchData" placeholder="search data...">
+                </div>
                 <table border="1" id="tableData">
                     <tr>
                         <th>Task</th>
                         <th>Status</th>
                         <th>Deadline</th>
                         <th>Actions</th>
+                    </tr>
+                    <tr class="dataInsert">
+                        <td>Complete assignment</td>
+                        <td>Completed</td>
+                        <td>10/11/2023, 12:00:00PM</td>
+                        <td>
+                            <button id="editButton">Edit</button>
+                            <button id="deleteButton">Delete</button>
+                        </td>
                     </tr>
                     <tr class="dataInsert">
                         <td>Complete assignment</td>

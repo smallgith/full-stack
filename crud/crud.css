@@ -37,7 +37,8 @@ input{
     padding: .6rem;
     border-radius: .3rem;
     border: .15rem solid green;
-    
+    font-size: .99rem;
+    font-weight: 500;
     
 }
 input::placeholder{
@@ -67,6 +68,8 @@ p{
     padding: .6rem;
     border-radius: .3rem;
     border: .15rem solid green;
+    font-size: .99rem;
+    font-weight: 500;
 }
 span{
     color: rgba(255, 0, 0,.8);
@@ -100,5 +103,12 @@ td{
 #deleteButton{
     background-color: rgba(0, 128, 0,.85);
     padding: .8rem;
+}
+.searchElem{
+       display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+    margin: 1rem 0rem;
 }
 
