@@ -26,7 +26,7 @@
 
                         <label for="userTask">Task</label>
                         <input type="text" name="enterTask" id="enterTask" placeholder="Enter your task">
-                        <span>require</span>
+                        <span class="requireSpan">please fill up</span>
                     </div>
                     
                     <div class="userInformation">
@@ -38,15 +38,15 @@
                             <option value="padding" name="padding">Padding</option>
                             <option value="completed" name="completed">Completed</option>
                         </select>
-                        <span>require</span>
+                        <span class="requireSpan">please fill up</span>
                     </div>
                     <div class="userInformation">
                         
                         <label for="userTime">Deadline</label>
                         <input type="datetime-local" name="userTime" id="userTime">
-                        <span>require</span>
+                        <span class="requireSpan">please fill up</span>
                     </div>
-                    <button type="submit">Add Task</button>
+                    <button type="submit" id="addTaskData">Add Task</button>
                 </form>
             </div>
             <div class="taskTable">
@@ -64,30 +64,22 @@
                         <th>Actions</th>
                     </tr>
                     <tr class="dataInsert">
-                        <td>Complete assignment</td>
-                        <td>Completed</td>
-                        <td>10/11/2023, 12:00:00PM</td>
-                        <td>
-                            <button id="editButton">Edit</button>
-                            <button id="deleteButton">Delete</button>
-                        </td>
+                        
                     </tr>
-                    <tr class="dataInsert">
-                        <td>Complete assignment</td>
-                        <td>Completed</td>
-                        <td>10/11/2023, 12:00:00PM</td>
-                        <td>
-                            <button id="editButton">Edit</button>
-                            <button id="deleteButton">Delete</button>
-                        </td>
-                    </tr>
+                    
                 </table>
             </div>
         </div>
         
     </main>
     
-
+<!-- let editBtn = document.createElement('button')
+    editBtn.className = "editButton";
+    editBtn.innerText = 'Edit'
+    let deleteBtn = document.createElement('button')
+    deleteBtn.className = "deleteButton";
+    deleteBtn.innerText = 'Delete'
+    newInsertData.append(editBtn) -->
 
 
 
