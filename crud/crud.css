@@ -89,7 +89,6 @@ span{
    
 }
 th{
-    
     border: .15rem solid white;
     color: white;
     background-color: green;
@@ -117,6 +116,11 @@ td{
     gap: .2rem;
     margin: 1rem 0rem;
 }
-
+.formData{
+    width: 50rem;
+}
+.taskTable .tableData{
+    width: 50rem;
+}
 
 
