@@ -11,7 +11,7 @@ let requireSpan3 = document.querySelector(".requireSpan3");
 
 let arr = [];
 let editId = null;
-let sortAscending = true; 
+let sortAscending = true;
 function formatDateTime(dateStr) {
   let dateObj = new Date(dateStr);
   let day = String(dateObj.getDate()).padStart(2, "0");
