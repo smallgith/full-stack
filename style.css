@@ -28,6 +28,7 @@ body{
         margin: 2rem 2rem;
         display: flex;
        gap: 5rem;
+       flex-wrap: wrap;
 }
 a{
         text-decoration: none;
