@@ -63,3 +63,69 @@ button:hover{
     background-color: #374151;
     color: #84a6b2;
 }
+.main-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.second_main_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+}
+#bill_amount{
+    width: 100%;
+    height: 2rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    font-size: 1.0rem;
+}
+#bill_per{
+    width: 100%;
+    height: 2rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    font-size: 1.0rem;
+}
+.calculate_btn{
+    width: 100%;
+    padding: .5rem;
+}
+span{
+    font-size:1.5rem;
+    font-weight: 800;
+}
+
+
+/* third task */
+.ageBtn{
+    width: 100%;
+    padding: .5rem;
+}
+.third-main-container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+}
+.third_container{
+    margin: 10rem;
+    width: 30rem;
+}
+#date{
+      width: 100%;
+    height: 2rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    font-size: 1.0rem;
+}
