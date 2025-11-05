@@ -10,6 +10,21 @@ let requireSpan2 = document.querySelector(".requireSpan2");
 let requireSpan3 = document.querySelector(".requireSpan3");
 
 let arr = [];
+
+// Local storage
+
+function setItemLocalStorage(){
+  console.log(JSON.stringify(typeof arr));
+  console.log((typeof JSON.stringify(arr)));
+  localStorage.setItem('userdata',JSON.stringify(arr))
+}
+window.addEventListener('load',()=>{
+    let stayData = JSON.parse(localStorage.getItem("userdata")) || []
+    arr = stayData
+    
+    renderUser(arr);
+})
+
 let editId = null;
 let sortAscending = true;
 function formatDateTime(dateStr) {
@@ -96,6 +111,7 @@ function formSubmitBtn(e) {
           deadline: userTime.value,
         };
       }
+
       return task;
     });
     editId = null;
@@ -109,6 +125,7 @@ function formSubmitBtn(e) {
     };
     arr.push(obj);
   }
+  setItemLocalStorage()
   userTaskSubmit.reset();
   renderUser(arr);
 }
@@ -122,6 +139,7 @@ function editTask(id) {
 }
 function deleteTask(id) {
   arr = arr.filter((task) => task.id !== id);
+  localStorage.setItem("userdata", JSON.stringify(arr));
   renderUser(arr);
 }
 searchData.addEventListener("input", (e) => {
