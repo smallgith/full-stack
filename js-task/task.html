@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="./task.css">
 </head>
 <body>
- 
-    <div class="container">
-        <div class="display">0</div>
+ <div class="main-container">
+
+     <div class="container">
+         <div class="display">0</div>
             <div class="buttons-container">
                 <button onclick="clearData()" class="uniqueBtn">AC</button>
                 <button onclick="getData('-')" class="uniqueBtn">+/-</button>
@@ -31,7 +32,44 @@
                 <button onclick="getData('.')">.</button>
                 <button onclick="calculte()" class="operator">=</button>
             </div>
+        </div>
+
+
+    <!-- Second task -->
+    <div class="second_div">
+        <div class="second_main_container">
+            <h1>Tip Calculator</h1>
+            <p>Enter the bill amount and tip percentage to calculate the total</p>
+            <label for="bill_amount">Bill amount : </label>
+            <input type="text" name="bill_amount" id="bill_amount">
+            <label for="bill_per">Tip percentage : </label>
+            <input type="text" name="bill_per" id="bill_per">
+            <button class="calculate_btn">calculate</button>
+            <p>Total : <span class="totalSpan">0</span></p>
+        </div>
     </div>
+
+
+
+    <div class="third_container">
+        <div class="third-main-container">
+            <h1>Age Calculator</h1>
+            <p>Enter you date of birth</p>
+            <input type="date" name="date" id="date">
+            <button class="ageBtn">Calculate Age</button>
+            <p>Your age is <span class="ageSpan"> 0 </span> years and <span class="ageMonth"> 0 </span> month and <span class="ageDate">0</span> old</p>
+        </div>
+    </div>
+
+
+    </div>
+
+    
+
+
+
+
+
     <script src="./task.js"></script>
 </body>
 </html>
