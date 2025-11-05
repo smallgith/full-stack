@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: red;
+        font-size: 2rem;
+        width: 100dvw;
+        height: 100dvh;
+      }
+
+      p {
+        padding: 1rem;
+      }
+      .first {
+        width: 20%;
+
+        background-color: aqua;
+      }
+      .second {
+        width: 40%;
+        color: white;
+        background-color: black;
+      }
+      .third {
+        width: 60%;
+        background-color: brown;
+      }
+      .fourth {
+        width: 80%;
+        background-color: blueviolet;
+      }
+      @media (min-width: 320px) {
+        .first {
+          background-color: rebeccapurple;
+          font-size: 4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="first">paragraph one</p>
+      <p class="second">paragraph two</p>
+      <p class="third">paragraph three</p>
+      <p class="fourth">paragraph four</p>
+    </div>
+  </body>
+</html>

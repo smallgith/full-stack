@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;   
+}
+body::selection{
+    background-color: green;
+    color: white;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+#userTaskSubmit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .9rem;
+}
+#userTaskSubmit > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+}
+input{
+    width: 25rem;
+    height: 2.5rem;
+    padding: .6rem;
+    border-radius: .3rem;
+    border: .15rem solid green;
+    font-size: .99rem;
+    font-weight: 500;
+    
+}
+input::placeholder{
+    color: black;
+}
+button{
+    width: 10rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background-color: green;
+    color: white;
+    border: none;
+}
+p{
+    
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: green;
+}
+#userDropDown{
+       width: 25rem;
+    height: 2.5rem;
+    padding: .5rem .6rem;
+    border-radius: .3rem;
+    border: .15rem solid green;
+    font-size: .99rem;
+    font-weight: 500;
+}
+span{
+    color: rgba(255, 0, 0,.8);
+    display: none;
+    
+}
+.taskTable{
+    margin: 3rem 0rem;
+}
+#tableData{
+    border: .15rem solid green;
+    border-collapse: collapse;
+    border: .15rem solid white;
+   
+}
+th{
+    border: .15rem solid white;
+    color: white;
+    background-color: green;
+    padding: .7rem 2rem;
+}
+td{
+     padding: .7rem 2rem; 
+}
+
+.editButton{
+    width: 5rem;
+    background-color: rgba(0, 128, 0,.85);
+    padding: .8rem;
+    margin: .5rem;
+}
+.deleteButton{
+    width: 5rem;
+    background-color: rgba(0, 128, 0,.85);
+    padding: .8rem;
+}
+.searchElem{
+       display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+    margin: 1rem 0rem;
+}
+.formData{
+    width: 50rem;
+}
+.taskTable .tableData{
+    width: 50rem;
+}
+
+
