@@ -73,6 +73,7 @@ startButton.addEventListener('click',startQuiz)
 restartButton.addEventListener('click',restartQuiz)
 function startQuiz(){
     currentQuestionIndex = 0
+    score = 0
     scoreSpan.textContent = score
 
     startScreen.classList.remove("active")
@@ -83,7 +84,7 @@ function startQuiz(){
 function showquestion(){
     answerDisabled = false
     const currentQuestion = quizQuestions[currentQuestionIndex]
-    console.log(currentQuestion)
+    console.log(currentQuestion,"currebt")
     currentQuestionSpan.textContent = currentQuestionIndex + 1 
     console.log(currentQuestionIndex)
     const progressPercent = (currentQuestionIndex/quizQuestions.length) * 100
@@ -103,6 +104,8 @@ function showquestion(){
         button.dataset.correct = answer.correct
 
         button.addEventListener('click',selectAnswer)
+       
+
         answersContainer.appendChild(button)
     })
 }
