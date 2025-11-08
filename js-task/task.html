@@ -57,10 +57,17 @@
             <p>Enter you date of birth</p>
             <input type="date" name="date" id="date">
             <button class="ageBtn">Calculate Age</button>
-            <p>Your age is <span class="ageSpan"> 0 </span> years and <span class="ageMonth"> 0 </span> month and <span class="ageDate">0</span> old</p>
+            <div class="ageInfo">
+
+                <p>Your age is <span class="ageSpan"> 0 </span> years and <span class="ageMonth"> 0 </span> month and <span class="ageDate">0</span> days old</p>
+            </div>
+                <p class="invalidData">Invalid date</p>
         </div>
     </div>
-
+<!--   if (year === currentYear || month === currentMonth || cdate === currentDate) {
+    
+    invalidData.style.display = "block"
+  } -->
 
     </div>
 
