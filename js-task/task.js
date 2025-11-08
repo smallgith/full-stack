@@ -15,6 +15,8 @@ let ageBtn = document.querySelector('.ageBtn')
 let ageSpan = document.querySelector('.ageSpan')
 let ageMonth = document.querySelector('.ageMonth')
 let ageDate = document.querySelector('.ageDate')
+let invalidData = document.querySelector(".invalidData");
+let ageInfo = document.querySelector(".ageInfo");
 
 function getData(text){
     if (display.innerText === "0" || display.innerText === "Error" || display.innerText === "Infinity") {
@@ -51,22 +53,38 @@ calculateBtn.addEventListener('click',billamountData)
 
 function ageData(){
   let age = date.value
-  console.log(age)
-  let year = age.split("-")[0];
+  let year = parseInt(age.split("-")[0]);
+  let month = parseInt(age.split("-")[2]);
+  let cdate = parseInt(age.split("-")[1]);
   let currentTime = new Date()
   let currentYear = currentTime.getFullYear()
-  let currentMonth = currentTime.getMonth() 
+  let currentMonth = currentTime.getMonth() + 1 
   let currentDate = currentTime.getDate() 
-  let month = age.split("-")[2]
-  let cdate = age.split("-")[1]
-  console.log(currentYear)
+  console.log(year,month,cdate,"sdsdsdds")
+  console.log(currentYear, currentMonth, currentDate, "sdsdsddsdsdssdssdss");
+  
+  if (year === currentYear || month === currentMonth || cdate === currentDate) {
+    
+    invalidData.style.display = "block"
+   ageInfo.style.display = "none"
+  }
   const ageCount = currentYear - year
-  const ageMonthCount = currentMonth + 1 - month
+  console.log(ageCount, "ageCount");
+  const ageMonthCount = currentMonth  - month
+  console.log(ageMonthCount,"agemonthcout")
   const ageDateCount = currentDate - cdate
+  console.log(ageDateCount, "ageDateCount");
 
-  ageSpan.textContent = ageCount
-  ageMonth.textContent = ageMonthCount
-  ageDate.textContent = ageDateCount
+
+     ageSpan.textContent = ageCount;
+    ageMonth.textContent = ageMonthCount;
+    ageDate.textContent = ageDateCount;
+
+    
+    
+
+    
+
 }
 
 ageBtn.addEventListener('click',ageData)
